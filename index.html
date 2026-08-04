@@ -3,116 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maison Velvet | Sofisticación y Detalles</title>
-    <meta name="description" content="Maison Velvet ofrece la más alta calidad y un estilo inigualable. La verdadera sofisticación está en los detalles.">
-    
+    <title>Maison Velvet | La verdadera sofisticación está en los detalles</title>
+    <meta name="description" content="Maison Velvet ofrece la más alta calidad y un estilo inigualable en ropa elegante de lujo.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- 1. ENCABEZADO -->
+    <!-- Header -->
     <header class="header">
         <div class="container header-container">
             <div class="logo">
                 <a href="#">MAISON VELVET</a>
             </div>
-            <nav class="nav">
+            <nav class="nav-menu">
                 <ul class="nav-list">
                     <li><a href="#inicio" class="nav-link">INICIO</a></li>
                     <li><a href="#nosotros" class="nav-link">NOSOTROS</a></li>
+                    <li><a href="#productos" class="nav-link">PRODUCTOS</a></li>
                     <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
                 </ul>
-                <button class="mobile-menu-btn" aria-label="Abrir menú">
+                <div class="menu-toggle" id="mobile-menu">
                     <i class="fas fa-bars"></i>
-                </button>
+                </div>
             </nav>
         </div>
     </header>
 
-    <!-- 2. SECCIÓN PRINCIPAL / HERO SECTION -->
+    <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h1 class="hero-title">MAISON VELVET</h1>
             <p class="hero-subtitle">La verdadera sofisticación está en los detalles</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/51945746449" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href="https://wa.me/51945746449" target="_blank" class="btn btn-primary">
                     <i class="fab fa-whatsapp"></i> CONTÁCTANOS POR WHATSAPP
                 </a>
-                <a href="https://web.facebook.com/Sofisticacionperu/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <a href="https://web.facebook.com/Sofisticacionperu/?locale=es_LA" target="_blank" class="btn btn-secondary">
                     <i class="fab fa-facebook-f"></i> VISITA NUESTRO FACEBOOK
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- 3. SECCIÓN "SOFISTICACIÓN PERÚ" -->
+    <!-- Sofisticación Perú -->
     <section id="nosotros" class="about">
         <div class="container about-container">
             <div class="about-text">
-                <h2 class="section-title">SOFISTICACIÓN PERÚ</h2>
+                <h2 class="section-title">Sofisticación Perú</h2>
                 <div class="title-underline"></div>
                 <p>En Maison Velvet, nos dedicamos a ofrecer la más alta calidad y un estilo inigualable. Cada detalle está pensado para brindarte una experiencia premium que refleje tu verdadera esencia.</p>
             </div>
-            <div class="about-media">
-                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Moda de lujo Maison Velvet" class="fashion-image">
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="images/multimedia_fashion.jpg" alt="Ropa de moda de lujo Maison Velvet">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. SECCIÓN "ENCUÉTRANOS" -->
+    <!-- Productos Destacados -->
+    <section id="productos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Productos Destacados</h2>
+                <div class="title-underline center"></div>
+            </div>
+            
+            <div class="product-grid">
+                <!-- Producto 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product_dress.jpg" alt="Vestido de Alta Costura">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Vestido Éléonore</h3>
+                        <p class="product-desc">Vestido largo de alta costura con detalles bordados a mano, ideal para galas.</p>
+                        <a href="https://wa.me/51945746449?text=Hola,%20deseo%20cotizar%20el%20Vestido%20Éléonore" target="_blank" class="btn-outline">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product_blouse.jpg" alt="Blusa de Seda">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Blusa Seda Royale</h3>
+                        <p class="product-desc">Elegante blusa de seda natural, un básico atemporal para tu guardarropa.</p>
+                        <a href="https://wa.me/51945746449?text=Hola,%20deseo%20cotizar%20la%20Blusa%20Seda%20Royale" target="_blank" class="btn-outline">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product_coat.jpg" alt="Abrigo de Invierno">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Abrigo Hiver Laine</h3>
+                        <p class="product-desc">Abrigo de invierno estructurado, mezcla de lana premium, diseño minimalista.</p>
+                        <a href="https://wa.me/51945746449?text=Hola,%20deseo%20cotizar%20el%20Abrigo%20Hiver%20Laine" target="_blank" class="btn-outline">
+                            <i class="fab fa-whatsapp"></i> Cotizar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Encuéntranos -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2 class="section-title center">ENCUÉNTRANOS</h2>
-            <div class="title-underline center-underline"></div>
+            <div class="section-header">
+                <h2 class="section-title text-light">Encuéntranos</h2>
+                <div class="title-underline center light"></div>
+            </div>
             
             <div class="contact-grid">
-                <!-- Bloque 1: Dirección -->
-                <div class="contact-card">
+                <!-- Bloque 1 -->
+                <div class="contact-block">
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>DIRECCIÓN</h3>
-                    <p>Jr. Avancay 273, Bagua Grande-Amazonas.</p>
+                    <h3 class="contact-title">DIRECCIÓN</h3>
+                    <p class="contact-text">Jr. Avancay 273,<br>Bagua Grande-Amazonas.</p>
                 </div>
 
-                <!-- Bloque 2: WhatsApp -->
-                <div class="contact-card">
+                <!-- Bloque 2 -->
+                <div class="contact-block">
                     <div class="contact-icon">
                         <i class="fab fa-whatsapp"></i>
                     </div>
-                    <h3>WHATSAPP</h3>
-                    <p>945746449</p>
-                    <a href="https://wa.me/51945746449" target="_blank" rel="noopener noreferrer" class="btn btn-outline">ENVIAR MSJ</a>
+                    <h3 class="contact-title">WHATSAPP</h3>
+                    <p class="contact-text">945746449</p>
+                    <a href="https://wa.me/51945746449" target="_blank" class="btn-action">
+                        ENVIAR MSJ
+                    </a>
                 </div>
 
-                <!-- Bloque 3: Redes Sociales -->
-                <div class="contact-card">
+                <!-- Bloque 3 -->
+                <div class="contact-block">
                     <div class="contact-icon">
-                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-facebook-f"></i>
                     </div>
-                    <h3>REDES SOCIALES</h3>
-                    <p>Sofisticación Perú</p>
-                    <a href="https://web.facebook.com/Sofisticacionperu/?locale=es_LA" target="_blank" rel="noopener noreferrer" class="btn btn-outline">IR A PÁG</a>
+                    <h3 class="contact-title">REDES SOCIALES</h3>
+                    <p class="contact-text">Sofisticación Perú</p>
+                    <a href="https://web.facebook.com/Sofisticacionperu/?locale=es_LA" target="_blank" class="btn-action">
+                        IR A PÁG
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. PIE DE PÁGINA (FOOTER) -->
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>FOOTER: MAISON VELVET | &copy; 2026 Maison Velvet. Todos los derechos reservados.</p>
+        <div class="container footer-content">
+            <p>MAISON VELVET | &copy; 2026 Maison Velvet. Todos los derechos reservados.</p>
         </div>
     </footer>
 
+    <!-- Simple Script for Mobile Menu -->
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
